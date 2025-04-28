@@ -1,13 +1,13 @@
 #Step1: Unzip the dataset
-path = r"D:\datasets\New To Work on 3\Tweet Sentiment Classification Dataset\Tweet Sentiment Classification Dataset.zip"
+path = r"...your path...\Tweet Sentiment Classification Dataset.zip"
 #First of all we need to unzip the dataset
 import zipfile
 with zipfile.ZipFile(path, 'r') as zip_ref:
-    zip_ref.extractall(r"D:\datasets\New To Work on 3\Tweet Sentiment Classification Dataset")
+    zip_ref.extractall(r"...path....\Tweet Sentiment Classification Dataset")
 
 #Now we need to load the dataset
 import pandas as pd
-df = pd.read_csv(r"D:\datasets\New To Work on 3\Tweet Sentiment Classification Dataset\tweet_sentiment.csv")
+df = pd.read_csv(r"...path...Dataset\tweet_sentiment.csv")
 
 #Step2: Understand the dataset
 import matplotlib.pyplot as plt
